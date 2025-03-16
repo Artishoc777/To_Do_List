@@ -8,6 +8,6 @@ Using technologies: <br>
 <div style="background-color: #ff4747; padding: 5px;">
 WARINIG: Your notes are saved to local storage. When you reload your browser cache, your notes may be lost.</div><br>
 
-### [Go to GitHub pages]()
+### [Go to GitHub pages](https://artishoc777.github.io/To_Do_List/)
 
 
