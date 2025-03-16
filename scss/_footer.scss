@@ -1,0 +1,7 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.footer {
+    background-color: v.$dark_gray;
+    @include m.size(100%, 240px);
+}

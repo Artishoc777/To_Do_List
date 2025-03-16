@@ -1,0 +1,14 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.header{
+    background-color: v.$dark_gray;
+    padding-left: 55px;
+    user-select: none;
+    @include m.size(100%, 145px);
+    @include m.d-flex(left);
+
+    &__title {
+        @include m.font(64px, 500, v.$medium_gray);
+    }
+}

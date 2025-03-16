@@ -1,0 +1,15 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "To Do List",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Its Work\" && exit 1",
+    "sass:watch": "sass --style=expanded --watch scss/index.scss css/index.css"
+  },
+  "author": "Artur N",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.85.1"
+  }
+}

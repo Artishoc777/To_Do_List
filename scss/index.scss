@@ -1,0 +1,6 @@
+@use 'importer' as v;
+
+body {
+    background-color: v.$main_window_color;
+}
+

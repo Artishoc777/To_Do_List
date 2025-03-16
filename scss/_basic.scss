@@ -1,0 +1,20 @@
+@use "variables" as v;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+*::selection {
+    background-color: v.$light_gray;
+    color: v.$main_window_color;
+}
+
+h1, h2, h3, h4, h5, h6, ul, p, button {
+    margin: 0;
+    padding: 0;
+} 

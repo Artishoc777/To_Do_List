@@ -1,0 +1,108 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.main {
+    .section {
+        max-width: 1830px;
+        padding-inline: 45px;
+        padding-block: 60px 75px;
+        @include m.d-flex(center, center, nowrap, row, 50px);
+
+        &__files-manager {
+            border-radius: 15px;
+            background-color: v.$medium_gray;
+            padding-inline: 40px;
+            padding-block: 20px;
+            overflow-y: auto;
+            @include m.size(305px, 675px);
+            
+
+            &-title {
+                @include m.font(46px, 500);
+            }
+
+            &-list {
+                margin-top: 30px;
+
+                .list__item {
+                    display: flex;
+                    padding: 5px;
+                    @include m.d-flex(space-between);
+                    @include m.font(26px, 300, v.$dark_gray);
+
+                    .list__remove-btn {
+                        scale: 0.7;
+                        outline: v.$dark_gray;
+                    }
+
+                    &-text{
+                        padding-inline: 10px;
+                        user-select: none;
+                    }
+
+                    &-text:hover {
+                        background-color: v.$dark_gray;
+                        border-radius: v.$border-r;
+                        @include m.font(26px, 300, v.$light_gray);
+                    }
+                }
+            }
+        }
+
+        .note {
+            width: 800px;
+            @include m.d-flex(center, center, nowrap, column, 0, 40px);
+
+            &__title {
+                border-radius: 15px;
+                padding-inline: 20px;
+                background-color: v.$light_gray;
+                @include m.d-flex(center, center, nowrap, column, 0, 0);
+                @include m.size(100%, 100px); 
+
+                &-area {
+                    border: 0;
+                    resize: none;
+                    background-color: transparent;
+                    overflow-y: auto;
+                    overflow-x: hidden;
+                    white-space: nowrap;
+                    width: 100%;
+                    @include  m.font(30px, 400, v.$dark_gray);
+                }
+
+                &-area:focus{
+                    border: none;
+                    outline: none;
+                }
+
+                &-line{
+                    background-color: v.$medium_gray;
+                    @include m.size(100%, 2px);
+                }
+            }
+
+            &__text {
+                padding: 20px;
+                border-radius: 15px;
+                background-color: v.$light_gray;
+                @include m.size(100%, 534px);
+
+                &-area {
+                    border: 0;
+                    resize: none;
+                    overflow-x: hidden;
+                    background-color: transparent;
+                    width: 100%;
+                    @include  m.font(22px, 400, v.$dark_gray);
+                }
+
+                &-area:focus{
+                    border: none;
+                    outline: none;
+                }
+            }
+
+        }
+    }
+}
